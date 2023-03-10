@@ -5,7 +5,7 @@
 }
 
 body{
-    /* background-color: red; */
+    background-color: gray;
 }
 
 
@@ -13,12 +13,49 @@ body{
     /* background: blue; */
     height: 100vh;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container .display-content{
-    background-color: red;
+    /* gap: 20px; */
+    /* background-color: red; */
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: white 1px solid;
+}
+.container .display-content .content{
+    /* background-color: red; */
+    height: 85%;
+    width: 90%;
+    padding: 20px;
+    font-size: 28px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container .display-input{
-    background-color: purple;
+    /* gap: 20px; */
+    /* background-color: purple; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    /* gap: 20px; */
+}
+.container .display-input textarea{
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: none;
+    border-radius: 8px;
+    /* background-color: inherit; */
+    /* opacity: 0.3; */
+    /* color: white; */
 }
