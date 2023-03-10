@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: red; */
+}
+
+
+.container{
+    /* background: blue; */
+    height: 100vh;
+    padding: 20px;
+}
+
+.container .display-content{
+    background-color: red;
+}
+
+.container .display-input{
+    background-color: purple;
+}
