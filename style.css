@@ -5,12 +5,11 @@
 }
 
 body{
-    background-color: gray;
+    background-color: black;
 }
 
 
 .container{
-    /* background: blue; */
     height: 100vh;
     padding: 20px;
     display: flex;
@@ -25,6 +24,10 @@ body{
     align-items: center;
     justify-content: center;
     border: white 1px solid;
+    transition: all 1s ease;
+}
+.container .display-content .content.animate{
+    animation: blink .5s infinite;
 }
 .container .display-content .content{
     /* background-color: red; */
@@ -33,10 +36,11 @@ body{
     padding: 20px;
     font-size: 28px;
     color: white;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
+
 
 .container .display-input{
     /* gap: 20px; */
@@ -55,7 +59,47 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     outline: none;
     border-radius: 8px;
-    /* background-color: inherit; */
-    /* opacity: 0.3; */
-    /* color: white; */
+    background-color: inherit;
+    color: white;
+}
+
+.correct{
+    color: green;
+    /* background-color: rgb(210, 240, 210); */
+}
+
+.incorrect{
+    color: red;
+    text-decoration: underline;
+}
+
+.timer{
+    background: purple;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    position: absolute;
+    color: white;
+    top: 240px;
+}
+
+
+
+
+
+@keyframes blink {
+    0%{
+        /* transform: scale(1); */
+        opacity: .3;
+    }50%{
+        /* transform: scale(1.7); */
+        opacity: 1;
+    }90%{
+        /* transform: scale(1.4); */
+        opacity: .2;
+    }
 }
